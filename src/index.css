@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-dark-bg text-white font-main overflow-x-hidden;
+  background-image: radial-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.neon-text {
+  @apply text-neon-blue animate-glow;
+}
+
+.neon-border {
+  @apply border border-neon-blue shadow-[0_0_10px_rgba(0,243,255,0.7)];
+}
+
+.neon-button {
+  @apply px-6 py-3 bg-transparent border-2 border-neon-blue text-neon-blue rounded-md font-semibold transition-all duration-300 hover:bg-neon-blue/20 hover:shadow-[0_0_15px_rgba(0,243,255,0.7)] hover:scale-105;
+}
+
+.glass-card {
+  @apply bg-dark-secondary/60 backdrop-blur-md border border-white/10 rounded-xl shadow-xl;
+}
+
+.section-heading {
+  @apply text-4xl md:text-5xl font-bold mb-8 text-center;
+}
+
+/* Removed the underline effect */
+ 
+.grid-bg {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-blue/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neon-blue/50;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ff00f0, #00f0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glitch-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-effect::before,
+.glitch-effect::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-effect::before {
+  left: 2px;
+  text-shadow: -1px 0 rgba(255, 0, 240, 0.7);
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch-effect::after {
+  left: -2px;
+  text-shadow: 1px 0 rgba(0, 240, 255, 0.7);
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0%, 100% { clip-path: inset(50% 0 30% 0); }
+  20% { clip-path: inset(33% 0 33% 0); }
+  40% { clip-path: inset(10% 0 60% 0); }
+  60% { clip-path: inset(70% 0 10% 0); }
+  80% { clip-path: inset(20% 0 40% 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0%, 100% { clip-path: inset(40% 0 40% 0); }
+  20% { clip-path: inset(60% 0 10% 0); }
+  40% { clip-path: inset(20% 0 50% 0); }
+  60% { clip-path: inset(30% 0 30% 0); }
+  80% { clip-path: inset(10% 0 60% 0); }
+}
+.popup-content {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 8px; /* Prevents content from sticking to the scrollbar */
+}
+
+/* Custom scrollbar styling (optional) */
+.popup-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+  background: transparent;
+}
