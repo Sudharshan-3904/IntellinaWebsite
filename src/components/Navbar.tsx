@@ -1,31 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY;
-      setScrolled(offset > 50);
+      setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Events', href: '#events' },
-    { name: 'Online Games', href: '#online-games' },
-    { name: 'Offline Games', href: '#offline-games' },
-    { name: 'Contact', href: '#contact' },
-  ];
+  // Scroll to the top when navigating
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location]);
 
   return (
     <motion.nav
@@ -39,7 +33,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
-            <a href="#home" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img
                 src="https://res.cloudinary.com/dqjrizifp/image/upload/v1741027208/photo_2025-03-04_00-09-50_pujkfn.jpg"
                 alt="Intellina Logo"
@@ -48,38 +42,42 @@ const Navbar = () => {
               <span className="text-2xl font-bold text-white">
                 INTEL<span className="text-neon-blue">LINA</span>
               </span>
-            </a>
+            </Link>
           </div>
+
+          {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="px-3 py-2 text-sm font-medium text-white hover:text-neon-blue transition-colors duration-300"
-                >
-                  {link.name}
-                </a>
-              ))}
-              <a
-                href="#register"
-                className="ml-4 px-4 py-2 rounded-md text-sm font-medium bg-neon-blue text-dark-bg hover:bg-neon-blue/80 transition-colors duration-300"
-              >
-                Register Now
-              </a>
+            <div className="ml-10 flex items-baseline space-x-6">
+              <Link to="/" className="px-3 py-2 text-sm font-medium text-white hover:text-neon-blue transition duration-300">
+                Home
+              </Link>
+              <Link to="/about" className="px-3 py-2 text-sm font-medium text-white hover:text-neon-blue transition duration-300">
+                About
+              </Link>
+              <Link to="/events" className="px-3 py-2 text-sm font-medium text-white hover:text-neon-blue transition duration-300">
+                Events
+              </Link>
+              <Link to="/chronoline" className="px-3 py-2 text-sm font-medium text-white hover:text-neon-blue transition duration-300">
+  Chronoline
+</Link>
+
+              <Link to="/team" className="px-3 py-2 text-sm font-medium text-white hover:text-neon-blue transition duration-300">Team</Link>
             </div>
           </div>
+
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-neon-blue focus:outline-none"
+              className="p-2 rounded-md text-white hover:text-neon-blue focus:outline-none"
             >
-              {isOpen ? <X className="block h-6 w-6" aria-hidden="true" /> : <Menu className="block h-6 w-6" aria-hidden="true" />}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
       </div>
 
+      {/* Mobile Navigation Menu */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
@@ -89,23 +87,22 @@ const Navbar = () => {
           className="md:hidden bg-dark-tertiary/90 backdrop-blur-lg"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-neon-blue hover:bg-dark-bg/50 transition-colors duration-300"
-              >
-                {link.name}
-              </a>
-            ))}
-            <a
-              href="#register"
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium bg-neon-blue text-dark-bg hover:bg-neon-blue/80 transition-colors duration-300 mt-4"
-            >
-              Register Now
-            </a>
+            <Link to="/" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-neon-blue transition duration-300">
+              Home
+            </Link>
+            <Link to="/about" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-neon-blue transition duration-300">
+              About
+            </Link>
+            <Link to="/events" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-neon-blue transition duration-300">
+              Events
+            </Link>
+            <Link to="/chronoline" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-neon-blue transition duration-300">
+  Chronoline
+</Link>
+
+            <Link to="/team" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-neon-blue transition duration-300">
+  Team
+</Link>
           </div>
         </motion.div>
       )}
@@ -114,13 +111,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// Add this CSS rule to your global styles or Tailwind configuration:
-// Ensure all sections have enough margin to prevent content from hiding under the navbar
-const globalStyles = `
-  section {
-    scroll-margin-top: 5rem; /* Adjust this value according to your navbar height */
-  }
-`;
-
-document.head.insertAdjacentHTML('beforeend', `<style>${globalStyles}</style>`);

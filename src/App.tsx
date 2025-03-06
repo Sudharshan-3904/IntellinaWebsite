@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-import Events from './components/Events';
-import OnlineGames from './components/OnlineGames';
-import OfflineGames from './components/OfflineGames';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Chronoline from './components/Chronoline';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    // Initialize GSAP animations
+    // Parallax Background Animation
     gsap.to('.parallax-bg', {
       backgroundPositionY: '100%',
       ease: 'none',
@@ -24,13 +22,13 @@ function App() {
         trigger: '.parallax-bg',
         start: 'top top',
         end: 'bottom top',
-        scrub: true
-      }
+        scrub: true,
+      },
     });
 
-    // Animate sections on scroll
+    // Section Scroll Animations
     const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
+    sections.forEach((section) => {
       gsap.fromTo(
         section,
         { opacity: 0, y: 50 },
@@ -42,8 +40,8 @@ function App() {
             trigger: section,
             start: 'top 80%',
             end: 'top 50%',
-            scrub: 1
-          }
+            scrub: 1,
+          },
         }
       );
     });
@@ -51,15 +49,19 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      {/* Parallax Background */}
       <div className="fixed inset-0 bg-dark-bg -z-10 parallax-bg"></div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Events />
-      <OnlineGames />
-      <OfflineGames />
-      <Contact />
-      <Footer />
+
+      {/* Render Chronoline if on /chronoline route */}
+      {location.pathname === "/chronoline" ? (
+        <Chronoline />
+      ) : (
+        <>
+          <Navbar />
+          <Hero />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

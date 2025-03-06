@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { Calendar, MapPin, Clock } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -87,7 +88,9 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl"
           >
-            Explore the future of technology at the most innovative technical symposium of the year
+<span className="text-1xl  text-white">
+  Innovate <span className="text-neon-blue">|</span> Inspire <span className="text-neon-blue">|</span> Ignite
+</span>
           </motion.p>
 
           <motion.div
@@ -116,12 +119,10 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="flex flex-wrap gap-4 justify-center"
           >
-            <a href="#register" className="neon-button">
-              Register Now
-            </a>
-            <a href="#events" className="px-6 py-3 bg-dark-tertiary/50 text-white rounded-md font-semibold transition-all duration-300 hover:bg-dark-tertiary hover:scale-105">
-              Explore Events
-            </a>
+            <Link to="/events" className="px-6 py-3 bg-dark-tertiary/50 text-white rounded-md font-semibold transition-all duration-300 hover:bg-dark-tertiary hover:scale-105">
+  Explore Events
+</Link>
+
           </motion.div>
 
           <motion.div

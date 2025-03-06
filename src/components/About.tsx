@@ -1,90 +1,143 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Zap, Users, Trophy, Lightbulb } from 'lucide-react';
 
 const About = () => {
   // Separate refs for each section
-  const [refIntellina, inViewIntellina] = useInView({ triggerOnce: false, threshold: 0.1 });
-  const [refCollege, inViewCollege] = useInView({ triggerOnce: false, threshold: 0.1 });
+  const [refIntellina, inViewIntellina] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [refCollege, inViewCollege] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const [refDepartment, inViewDepartment] = useInView({ triggerOnce: false, threshold: 0.2 });
+  const fadeInVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
 
   return (
     <>
       {/* Intellina Section */}
       <section id="about" ref={refIntellina} className="py-20 relative">
         <div className="container mx-auto px-4">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={inViewIntellina ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
-            transition={{ duration: 0.6 }}
-            className="section-heading text-center"
-          >
-            About <span className="text-neon-blue">Intellina</span>
-          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            {/* Mobile: Header -> Content -> Image */}
+            <div className="md:hidden text-center">
+              <motion.h2 className="section-heading">
+                About <span className="text-neon-blue">Intellina</span>
+              </motion.h2>
+              <motion.p className="text-lg text-gray-300 mb-6">
+              Welcome to INTELLINA 2K25, a National Level Technical Fest by the Department of AI & Data Science. Experience hackathons, workshops, and expert sessions, bridging academia and industry. Join us to innovate, compete, and shape the future of technology!              </motion.p>
+              <motion.div className="relative overflow-hidden rounded-xl mx-auto">
+                <img
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Intellina Event"
+                  className="w-full h-[400px] object-cover rounded-xl"
+                />
+              </motion.div>
+            </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={inViewIntellina ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-center text-gray-300 mb-8"
-          >
-            Intellina is a premier technical symposium that brings together students, academics, and industry
-            professionals to explore the cutting edge of technology and innovation.
-          </motion.p>
+            {/* Desktop: Image Left, Content Right */}
+            <motion.div className="hidden md:block relative overflow-hidden rounded-xl mx-auto">
+              <img
+                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Intellina Event"
+                className="w-full h-[400px] object-cover rounded-xl"
+              />
+            </motion.div>
 
-          {/* Image with Animation */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={inViewIntellina ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative overflow-hidden rounded-xl mx-auto max-w-4xl"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Intellina Event"
-              className="w-full h-[400px] object-cover rounded-xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent"></div>
-          </motion.div>
+            <motion.div className="hidden md:block">
+              <h2 className="section-heading">
+                About <span className="text-neon-blue">Intellina</span>
+              </h2>
+              <p className="text-lg text-gray-300">
+              Welcome to INTELLINA 2K25, a National Level Technical Fest by the Department of AI & Data Science. Experience hackathons, workshops, and expert sessions, bridging academia and industry. Join us to innovate, compete, and shape the future of technology!              </p>
+            </motion.div>
+
+          </div>
         </div>
       </section>
 
       {/* College Section */}
       <section id="college" ref={refCollege} className="py-20 relative">
         <div className="container mx-auto px-4">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={inViewCollege ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
-            transition={{ duration: 0.6 }}
-            className="section-heading text-center"
-          >
-            About<span className="text-neon-blue">College</span>
-          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            {/* Mobile: Header -> Content -> Image */}
+            <div className="md:hidden text-center">
+              <motion.h2 className="section-heading">
+                About <span className="text-neon-blue">College</span>
+              </motion.h2>
+              <motion.p className="text-lg text-gray-300 mb-6">
+              The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987.              </motion.p>
+              <motion.div className="relative overflow-hidden rounded-xl mx-auto">
+                <img
+                  src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
+                  alt="College Campus"
+                  className="w-full h-[400px] object-cover rounded-xl"
+                />
+              </motion.div>
+            </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={inViewCollege ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-center text-gray-300 mb-8"
-          >
-            The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956.
-            CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987.
-          </motion.p>
+            {/* Desktop: Content Left, Image Right */}
+            <motion.div className="hidden md:block">
+              <h2 className="section-heading">
+                About <span className="text-neon-blue">College</span>
+              </h2>
+              <p className="text-lg text-gray-300">
+              The V. Rangasamy Naidu Educational Trust devoted to the cause of promoting technical and scientific literacy, established Coimbatore Institute of Technology (CIT) in Coimbatore, Tamil Nadu, South India in 1956. CIT is one of the most reputed and prestigious educational institutions in India. The Institute backed by World Class research and development over the years attained autonomous status in 1987.              </p>
+            </motion.div>
 
-          {/* Image with Animation */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={inViewCollege ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative overflow-hidden rounded-xl mx-auto max-w-4xl"
-          >
-            <img
-              src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
-              alt="College Campus"
-              className="w-full h-[400px] object-cover rounded-xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent"></div>
-          </motion.div>
+            <motion.div className="hidden md:block relative overflow-hidden rounded-xl mx-auto">
+              <img
+                src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
+                alt="College Campus"
+                className="w-full h-[400px] object-cover rounded-xl"
+              />
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Department Section */}
+      <section id="department" ref={refDepartment} className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            {/* Mobile: Header -> Content -> Image */}
+            <div className="md:hidden text-center">
+              <motion.h2 className="section-heading">
+                About <span className="text-neon-blue">Department</span>
+              </motion.h2>
+              <motion.p className="text-lg text-gray-300 mb-6">
+              The Artificial Intelligence & Data Science Department fosters innovation, research, and excellence by integrating AI with real-world applications. With expertise in machine learning, deep learning, and big data, we equip students to lead in academia, industry, and research through hands-on projects and collaborations.              
+              </motion.p>
+              <motion.div className="relative overflow-hidden rounded-xl mx-auto">
+                <img
+                  src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
+                  alt="Department"
+                  className="w-full h-[400px] object-cover rounded-xl"
+                />
+              </motion.div>
+            </div>
+
+            {/* Desktop: Image Left, Content Right */}
+            <motion.div className="hidden md:block relative overflow-hidden rounded-xl mx-auto">
+              <img
+                src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
+                alt="Department"
+                className="w-full h-[400px] object-cover rounded-xl"
+              />
+            </motion.div>
+
+            <motion.div className="hidden md:block">
+              <h2 className="section-heading">
+                About <span className="text-neon-blue">Department</span>
+              </h2>
+              <p className="text-lg text-gray-300">
+              The Artificial Intelligence & Data Science Department fosters innovation, research, and excellence by integrating AI with real-world applications. With expertise in machine learning, deep learning, and big data, we equip students to lead in academia, industry, and research through hands-on projects and collaborations.              </p>
+            </motion.div>
+
+          </div>
         </div>
       </section>
     </>
