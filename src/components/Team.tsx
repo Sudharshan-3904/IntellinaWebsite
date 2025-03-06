@@ -45,7 +45,7 @@ const developers = [
   { 
     name: "Akshay Karthick M S", 
     role: "Junior Developer", 
-    image: "https://res.cloudinary.com/dqjrizifp/image/upload/v1741254819/photo_2025-03-06_15-22-06_hwzxzp.jpg" 
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741273084/IMG-20240708-WA0281_smbg44.jpg" 
   },
 ];
 
