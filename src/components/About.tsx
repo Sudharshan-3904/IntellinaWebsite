@@ -28,7 +28,7 @@ const About = () => {
               Welcome to INTELLINA 2K25, a National Level Technical Fest by the Department of AI & Data Science. Experience hackathons, workshops, and expert sessions, bridging academia and industry. Join us to innovate, compete, and shape the future of technology!              </motion.p>
               <motion.div className="relative overflow-hidden rounded-xl mx-auto">
                 <img
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  src="https://res.cloudinary.com/dqjrizifp/image/upload/v1741027208/photo_2025-03-04_00-09-50_pujkfn.jpg"
                   alt="Intellina Event"
                   className="w-full h-[400px] object-cover rounded-xl"
                 />
@@ -38,7 +38,7 @@ const About = () => {
             {/* Desktop: Image Left, Content Right */}
             <motion.div className="hidden md:block relative overflow-hidden rounded-xl mx-auto">
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://res.cloudinary.com/dqjrizifp/image/upload/v1741027208/photo_2025-03-04_00-09-50_pujkfn.jpg"
                 alt="Intellina Event"
                 className="w-full h-[400px] object-cover rounded-xl"
               />
@@ -113,7 +113,7 @@ const About = () => {
               </motion.p>
               <motion.div className="relative overflow-hidden rounded-xl mx-auto">
                 <img
-                  src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
+                  src="https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png"
                   alt="Department"
                   className="w-full h-[400px] object-cover rounded-xl"
                 />
@@ -123,7 +123,7 @@ const About = () => {
             {/* Desktop: Image Left, Content Right */}
             <motion.div className="hidden md:block relative overflow-hidden rounded-xl mx-auto">
               <img
-                src="https://res.cloudinary.com/dqjrizifp/image/upload/v1740997907/cit-hm-1_kikoxq.jpg"
+                src="https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png"
                 alt="Department"
                 className="w-full h-[400px] object-cover rounded-xl"
               />
