@@ -1,17 +1,5 @@
 export const events = [
-  {
-    id: 6,
-    title: 'GPTathon',
-    description: 'Challenging participants in prompt engineering to generate high-quality AI responses.',
-    detailedDescription:
-      'GPTathon is an online hackathon hosted on Unstop, designed to challenge participants in the art of prompt engineering. Competitors will refine their ability to craft precise prompts to generate high-quality AI responses.',
-    date: 'April 5',
-    image: 'https://res.cloudinary.com/dqjrizifp/image/upload/v1741054409/download_1_bcbah7.jpg',
-    rules: ['Participants must use OpenAI GPT models.', 'Judging is based on creativity, efficiency, and accuracy.', 'Submissions must be original and unpublished.'],
-    registrationLink: 'https://unstop.com/p/gptathon-intellina-2k25-coimbatore-institute-of-technology-cit-coimbatore-1416167',
-    prize: 'Exciting cash prizes and e-certificates for winners!',
-    venue: 'Online - Unstop Platform',
-  },
+  
   {
     id: 1,
     title: 'Hackathon',
@@ -21,7 +9,6 @@ export const events = [
     date: 'April 4',
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1170&q=80',
     rules: ['Maximum team size: 4', 'No pre-built projects allowed', 'Judging based on innovation and execution'],
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfaC1Ks1p4ymgQdgcg6eL1fJjDpCXYtw4N75wlInW54ak3yIA/viewform',
     prize: 'Winner: ₹5,000 ',
     venue: 'On Campus',
   },
@@ -41,7 +28,6 @@ export const events = [
       'Judging Criteria: Clarity, research depth, innovation, and presentation.',
       "Final Decision: Judge's decisions are final.",
     ],
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfaC1Ks1p4ymgQdgcg6eL1fJjDpCXYtw4N75wlInW54ak3yIA/viewform',
     prize: 'Best Paper: ₹5,000',
     venue: 'CIT Conference Hall, Coimbatore',
   },
@@ -61,7 +47,6 @@ export const events = [
       'Qualification: Top 30 advance to Round 2.',
       'E-certificates: For all, Winners announced at valediction.',
     ],
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfaC1Ks1p4ymgQdgcg6eL1fJjDpCXYtw4N75wlInW54ak3yIA/viewform',
     prize: 'Winner: ₹5,000',
     venue: 'CIT, Coimbatore',
   },
@@ -73,7 +58,6 @@ export const events = [
     date: 'April 4',
     image: 'https://res.cloudinary.com/dqjrizifp/image/upload/v1741056307/download_5_hyjohw.jpg',
     rules: ['Solo or squad participation', 'Fair play is mandatory', 'Design must be fully responsive', 'Use of templates is not allowed'],
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfaC1Ks1p4ymgQdgcg6eL1fJjDpCXYtw4N75wlInW54ak3yIA/viewform',
     prize: 'Winner: ₹3,000',
     venue: 'CIT, Coimbatore',
   },
@@ -90,7 +74,6 @@ export const events = [
       'Visual Chaos: Focus on bad usability, not just bad aesthetics.',
       'Submission: Include a brief explanation of design choices.',
     ],
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfaC1Ks1p4ymgQdgcg6eL1fJjDpCXYtw4N75wlInW54ak3yIA/viewform',
     prize: 'Winner: ₹3,000',
     venue: 'CIT, Coimbatore',
   },

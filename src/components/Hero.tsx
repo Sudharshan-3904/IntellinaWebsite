@@ -124,6 +124,27 @@ const Hero = () => {
 </Link>
 
           </motion.div>
+          <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 1.0 }}
+  className="flex flex-wrap gap-4 justify-center mt-4"
+>
+  <a
+    href="https://register.example.com" // Replace with actual registration link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-neon-blue text-dark-bg rounded-md font-semibold transition-all duration-300 hover:bg-neon-blue/80"
+  >
+    Register Now
+  </a>
+</motion.div>
+
+{/* Disclaimer */}
+<p className="text-gray-400 text-center text-sm mt-2">
+  (Click register to participate in all Tech & Non-Tech events, excluding Flagship & Online Games)
+</p>
+
 
           <motion.div
             initial={{ opacity: 0 }}

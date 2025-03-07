@@ -108,6 +108,7 @@ const Team = () => {
             </motion.div>
           ))}
         </div>
+      </div>
 
         {/* Web Developers Section */}
         <div className="text-center mt-16 mb-10">
@@ -165,7 +166,7 @@ const Team = () => {
     </motion.div>
   ))}
 </div>
-      </div>
+        
 
       <Footer />
     </div>

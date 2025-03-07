@@ -3,8 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { events } from "../data/events";
 import { offlineGames } from "../data/offlineGames";
 import { onlineGames } from "../data/onlineGames";
-
-
+import { flagshipEvents } from "../data/flagshipEvents";
 import {
   Calendar,
   Trophy,
@@ -12,11 +11,16 @@ import {
   ClipboardList,
   ArrowLeft,
 } from "lucide-react";
+import { useEffect } from "react";
+
 
 const EventDetail = () => {
   const { id } = useParams();
-  const event = events.find((e) => e.id === Number(id)) || offlineGames.find((e) => e.id === Number(id)) || onlineGames.find((e) => e.id === Number(id));
-
+  const event = events.find((e) => e.id === Number(id)) || offlineGames.find((e) => e.id === Number(id)) || onlineGames.find((e) => e.id === Number(id)) || flagshipEvents.find((e) => e.id === Number(id));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+  
   if (!event) {
     return <h1 className="text-center text-white">Event Not Found</h1>;
   }
