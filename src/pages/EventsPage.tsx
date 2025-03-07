@@ -4,11 +4,13 @@ import Events from '../components/Events';
 import OfflineGames from '../components/OfflineGames';
 import OnlineGames from '../components/OnlineGames';
 import Footer from '../components/Footer';
+import Flagship from '../components/Flagship';
 
 const EventsPage = () => {
   const [activeTab, setActiveTab] = useState('events');
 
   const tabs = [
+    { id: 'flagship', label: 'Flagship Event'},
     { id: 'events', label: 'Technical' },
     { id: 'offline', label: 'Non-Technical' },
     { id: 'online', label: 'Online Games' },
@@ -42,6 +44,7 @@ const EventsPage = () => {
 
         {/* Event Sections */}
         <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8">
+          {activeTab === 'flagship' && </Flagship />}
           {activeTab === 'events' && <Events />}
           {activeTab === 'offline' && <OfflineGames />}
           {activeTab === 'online' && <OnlineGames />}

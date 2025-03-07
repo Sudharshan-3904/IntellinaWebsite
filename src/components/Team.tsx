@@ -17,7 +17,7 @@ const boardMembers = [
   { 
     name: "Sudharshan M Prabhu", 
     role: "Coordinator", 
-    image: "https://res.cloudinary.com/dqjrizifp/image/upload/v1741258776/photo_2025-03-06_16-29-18_y7n4dj.jpg" 
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741319770/photo_2025-03-07_09-24-59_cwhxlp.jpg" 
   },
   { 
     name: "Naveen Prasath K", 

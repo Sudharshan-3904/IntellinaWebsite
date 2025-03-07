@@ -53,7 +53,7 @@ export const onlineGames = [
     description: "Survive and dominate in this battle royale championship.",
     overallDescription:
       "Rapid Chess is a fast-paced version of chess where players have a limited time to make their moves, testing their strategy and quick thinking.",
-    prize: "₹800",
+    prize: "₹1000",
     players: "Squad or solo",
     venue: "Online Chess Platform",
     rules: [
