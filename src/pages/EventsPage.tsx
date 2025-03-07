@@ -44,7 +44,7 @@ const EventsPage = () => {
 
         {/* Event Sections */}
         <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8">
-          {activeTab === 'flagship' && </Flagship />}
+          {activeTab === 'flagship' && <Flagship />}
           {activeTab === 'events' && <Events />}
           {activeTab === 'offline' && <OfflineGames />}
           {activeTab === 'online' && <OnlineGames />}
