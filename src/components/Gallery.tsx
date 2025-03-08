@@ -1,16 +1,16 @@
 import React from "react";
 
 const images = [
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
-  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741275836/asslogo_bx7zxf.png",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406222/IMG_20240416_151234_uaofhv.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406219/IMG_20240416_101828_nivsgr.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406229/IMG_20240416_104218_gyelxt.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406229/IMG_5217_edktl0.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406229/Screenshot_2024-04-16_at_12.23.02_AM_af3luv.png",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406229/IMG_5222_nlxl5e.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406231/IMG_20240416_102705_ezsv3c.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406233/IMG_20240416_101855_p46cyt.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406234/_MG_5236_f71vck.jpg",
+  "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406331/Snapchat-1727728028_useloi_a_-90_vtklfz.jpg",
 ];
 
 const Gallery = () => {

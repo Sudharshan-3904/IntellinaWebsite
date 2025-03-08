@@ -10,7 +10,6 @@ import Chronoline from './components/Chronoline';
 import Guests from './components/Guests';
 import Gallery from './components/Gallery';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -48,10 +47,24 @@ function App() {
         }
       );
     });
+
+    // ✅ Fix Mobile Screen Resize Issue
+    const handleResize = () => {
+      document.documentElement.style.setProperty('overflow-x', 'hidden');
+      document.body.style.setProperty('overflow-x', 'hidden');
+    };
+
+    // Run once on mount & also on resize
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       {/* Parallax Background */}
       <div className="fixed inset-0 bg-dark-bg -z-10 parallax-bg"></div>
 

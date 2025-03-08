@@ -18,7 +18,7 @@ export const offlineGames = [
     time: '1:00 PM - 3:00 PM',
     venue: 'Seminar Hall',
     date: 'April 5, 2025',
-    image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741355873/NYT-Connections-today_33612f_gndg9d.webp',
+    image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406513/CONNECTION_zbn5qp.png',
     prize: '₹2500 ',
     rules: ['Solo participation only', 'Time limit of 5 minutes per round', 'Judging based on creativity and logical connections'],
   },
@@ -51,7 +51,7 @@ export const offlineGames = [
     time: '4:30 PM - 6:00 PM',
     venue: 'Campus Grounds',
     date: 'April 5, 2025',
-    image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741355873/15-single-default_tty9ie.jpg',
+    image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406515/Copy_of_DOC-20250307-WA0004._pnosqb.png',
     prize: '₹2000 ',
     rules: ['Teams of 5', 'No GPS or external tools allowed', 'Clues must be solved sequentially'],
   }
