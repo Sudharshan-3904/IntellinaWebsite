@@ -4,9 +4,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Contact from './components/Contact';
+import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
 import Chronoline from './components/Chronoline';
+import Guests from './components/Guests';
+import Gallery from './components/Gallery';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +62,9 @@ function App() {
         <>
           <Navbar />
           <Hero />
+          <Sponsors />
+          <Guests />
+          <Gallery />
           <Footer />
         </>
       )}

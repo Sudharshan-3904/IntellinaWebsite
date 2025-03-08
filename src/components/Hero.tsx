@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { Calendar, MapPin, Clock } from 'lucide-react';
@@ -6,19 +6,47 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
-  
+  const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+
   useEffect(() => {
+    // GSAP Text Animation
     if (textRef.current) {
-      const text = textRef.current;
-      
-      gsap.to(text, {
+      gsap.to(textRef.current, {
         backgroundPosition: '200% center',
         duration: 5,
         repeat: -1,
-        ease: 'linear'
+        ease: 'linear',
       });
     }
+
+    // Countdown Timer Logic
+    const eventDate = new Date("April 4, 2025 09:00:00").getTime(); // Set event date & time
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const timeRemaining = eventDate - now;
+
+      if (timeRemaining <= 0) {
+        setTimeLeft({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+        clearInterval(countdownInterval);
+        return;
+      }
+
+      const days = String(Math.floor(timeRemaining / (1000 * 60 * 60 * 24))).padStart(2, "0");
+      const hours = String(Math.floor((timeRemaining / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+      const minutes = String(Math.floor((timeRemaining / (1000 * 60)) % 60)).padStart(2, "0");
+      const seconds = String(Math.floor((timeRemaining / 1000) % 60)).padStart(2, "0");
+
+      setTimeLeft({ days, hours, minutes, seconds });
+    };
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown(); // Initial call to set values immediately
+
+    return () => clearInterval(countdownInterval); // Cleanup on component unmount
   }, []);
+
+  
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
@@ -76,7 +104,7 @@ const Hero = () => {
               backgroundClip: 'text',
             }}
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-sans font-bold mb-4">
+            <h1 className="text-6xl md:text-6xl lg:text-7xl font-sans font-bold">
               <span className="text-gradient glitch-effect" data-text="INTELLINA" >INTELLINA</span>
             </h1>
           </motion.h1>
@@ -131,7 +159,7 @@ const Hero = () => {
   className="flex flex-wrap gap-4 justify-center mt-4"
 >
   <a
-    href="https://register.example.com" // Replace with actual registration link
+    href="https://forms.gle/nPEGRoeUsyz3GUC46" // Replace with actual registration link
     target="_blank"
     rel="noopener noreferrer"
     className="px-6 py-3 bg-neon-blue text-dark-bg rounded-md font-semibold transition-all duration-300 hover:bg-neon-blue/80"
@@ -141,9 +169,47 @@ const Hero = () => {
 </motion.div>
 
 {/* Disclaimer */}
-<p className="text-gray-400 text-center text-sm mt-2">
+<p className="text-gray-400 text-center text-sm mt-2 mb-6">
   (Click register to participate in all Tech & Non-Tech events, excluding Flagship & Online Games)
 </p>
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 1 }}
+  className="text-center mt-6 mb-8"
+>
+  <h3 className="text-2xl font-bold text-neon-blue">Event Starts In</h3>
+  <div className="flex justify-center gap-4 mt-3 text-white text-lg">
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">{timeLeft.days}</span>
+      <span className="text-sm">Days</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">:</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">{timeLeft.hours}</span>
+      <span className="text-sm">Hours</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">:</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">{timeLeft.minutes}</span> 
+      <span className="text-sm">Minutes</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">:</span>
+    </div>
+    <div className="flex flex-col items-center">
+      <span className="text-4xl font-bold">{timeLeft.seconds}</span>
+      <span className="text-sm">Seconds</span>
+    </div>
+  </div>
+</motion.div>
+
+
+
 
 
           <motion.div
