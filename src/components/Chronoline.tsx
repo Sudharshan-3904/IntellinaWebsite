@@ -78,7 +78,7 @@ const Chronoline = () => {
       <div className="container mx-auto px-6 py-16">
         {/* Title */}
         <h1 className="text-5xl font-bold text-center text-neon-blue uppercase tracking-wide">
-          Timeline
+          Chronoline
         </h1>
 
         {/* Tabs */}
