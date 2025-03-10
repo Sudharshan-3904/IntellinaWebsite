@@ -145,28 +145,66 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex flex-wrap gap-4 justify-center"
+            className="flex flex-wrap gap-4 justify-center mb-10"
           >
             <Link to="/events" className="px-6 py-3 bg-dark-tertiary/50 text-white rounded-md font-semibold transition-all duration-300 hover:bg-dark-tertiary hover:scale-105">
   Explore Events
 </Link>
 
           </motion.div>
+          
           <motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5, delay: 1.0 }}
-  className="flex flex-wrap gap-4 justify-center mt-4"
+  className="relative flex flex-wrap gap-4 justify-center mt-4"
 >
   <a
-    href="https://forms.gle/nPEGRoeUsyz3GUC46" // Replace with actual registration link
+    href="https://forms.gle/nPEGRoeUsyz3GUC46"
     target="_blank"
     rel="noopener noreferrer"
-    className="px-6 py-3 bg-neon-blue text-dark-bg rounded-md font-semibold transition-all duration-300 hover:bg-neon-blue/80"
+    className="relative px-6 py-3 bg-neon-blue text-dark-bg rounded-md font-semibold text-lg transition-all duration-300 hover:bg-neon-blue/80 shadow-lg"
   >
     Register Now
+
+    {/* Explosion Effect Positioned Correctly */}
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{
+        scale: [1, 1.1, 1],
+        rotate: [0, 5, -5, 5, -5, 0], // Subtle shaking effect
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.8,
+        repeat: Infinity,
+        repeatType: "reverse",
+      }}
+      className="absolute -top-10 -right-24 flex items-center"
+    >
+      {/* Explosion Background */}
+      <div className="relative w-24 h-14">
+        <img
+          src="https://res.cloudinary.com/dxcctqlbr/image/upload/v1741624067/pngegg_s3wzlz.png" // Replace with actual explosion image
+          alt="Explosion Effect"
+          className="w-full h-full object-contain drop-shadow-lg"
+        />
+        {/* Offer Text Inside Explosion */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-[12px] font-bold text-black leading-tight">
+          <span className="text-sm">₹250</span>  
+          <span className="line-through text-xs">₹300</span>  
+        </div>
+      </div>
+
+      {/* Offer Details (Outside Explosion, to the Right) */}
+      <div className="ml-2 text-white text-sm font-semibold leading-tight">
+        <span className="text-orange-400">🔥 INTELLI-DEAL</span> <br />
+        <span>Till March 31 ⏳</span>
+      </div>
+    </motion.div>
   </a>
 </motion.div>
+
 
 {/* Disclaimer */}
 <p className="text-gray-400 text-center text-sm mt-2 mb-6">
