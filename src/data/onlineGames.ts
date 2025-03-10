@@ -22,12 +22,12 @@ export const onlineGames = [
       "Please adhere to the timings and have a stable internet connection. No rematch will be conducted.",
     ],
     image:
-      "https://res.cloudinary.com/dqjrizifp/image/upload/v1740999180/lTe3c3paRnaEXpDIfhl9We7scmqZM7WDWwlDBAs7_cbpkzu.jpg",
+      "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526459/IMG-20250307-WA0020_tdn6ke.jpg",
     registrationLink: "https://forms.gle/V5JAttzpPDdWK2jd6", // Added Registration Link
   },
   {
     id: 14,
-    title: "FREE FIRE",
+    title: "Free Fire",
     description: "Battle Royale and Knockout Clash Squad Matches.",
     overallDescription:
       "Each team will participate in both Battle Royale (BR) and Clash Squad (CS) Knockout matches. Only the first-place winners will receive the prize money. The BR winner will receive ₹1,000, while the winning CS team will receive ₹2,000. Re-entry is available for CS matches.",
@@ -44,7 +44,7 @@ export const onlineGames = [
       "For Battle Royale, winners will be determined based on points (kills and placements secured). No revival options will be available.",
     ],
     image:
-      "https://res.cloudinary.com/dqjrizifp/image/upload/v1740999180/free-fire-criminal-bundle-3h0095u465rofj7z_ycnh0t.jpg",
+      "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526462/FREE_FIRE_gi2d8y.png",
     registrationLink: "https://forms.gle/TadoxSZjZDjjimLp7",
   },
   {
@@ -65,7 +65,7 @@ export const onlineGames = [
       "Draw Rules: If a match isn’t completed, it is recorded as a draw.",
       "Semi-Finals & Final: Held offline at a venue; details provided later.",
     ],
-    image: "https://res.cloudinary.com/dqjrizifp/image/upload/v1740999179/download_z0x2b8.jpg",
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526461/IMG-20250307-WA0014_xksduh.jpg",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfJgC1xOaPJELUt8pEP-pOhBxMVxsH3_YDFI7ISt1PzOX4Mzw/viewform",
   },
 ];
