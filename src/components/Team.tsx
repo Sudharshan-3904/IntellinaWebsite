@@ -12,7 +12,7 @@ const developers = [
   { 
     name: "Akshay Karthick M S", 
     role: "Developer", 
-    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741414062/IMG_20250308_113516_b8pnoq.jpg",
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741527664/IMG-20240708-WA0281_ly8cox.jpg",
     linkedin: "https://www.linkedin.com/in/akshay-karthick-m-s-48a880268/",
     instagram: "https://www.instagram.com/acchu_ak_07?igsh=ZXJyc2ppM2M0YWVn"
   },
