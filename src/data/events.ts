@@ -19,7 +19,7 @@ export const events = [
       'A platform for students to present their research, insights, and innovative ideas in various technical and academic fields.',
     date: 'April 4',
     time: '10:00 AM - 05:00 PM',
-    image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526468/intellina_paper_prese_r4wy7f.png',
+    image: 'https://res.cloudinary.com/dqjrizifp/image/upload/v1741711998/intellina_paper_prese_faslvl.jpg',
     rules: [
       'Team Size: Solo or teams of up to 4.',
       'Originality: Papers must be unpublished and original.',
