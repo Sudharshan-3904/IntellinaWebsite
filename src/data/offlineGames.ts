@@ -51,7 +51,7 @@ export const offlineGames = [
     time: '11:00 AM - 01:00 PM',
     venue: 'IT-109',
     date: 'April 4, 2025',
-    image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741406515/Copy_of_DOC-20250307-WA0004._pnosqb.png',
+    image: 'https://res.cloudinary.com/dqjrizifp/image/upload/v1741928598/Treasure_hunt_ytjufa.png',
     prize: '₹2000 ',
     rules: ['Teams of 5', 'No GPS or external tools allowed', 'Clues must be solved sequentially'],
   }
