@@ -22,7 +22,7 @@ export const onlineGames = [
       "Please adhere to the timings and have a stable internet connection. No rematch will be conducted.",
     ],
     image:
-      "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526459/IMG-20250307-WA0020_tdn6ke.jpg",
+      "https://res.cloudinary.com/dqjrizifp/image/upload/v1741928591/1_uqmlbn.png",
     registrationLink: "https://forms.gle/V5JAttzpPDdWK2jd6", // Added Registration Link
   },
   {
@@ -44,7 +44,7 @@ export const onlineGames = [
       "For Battle Royale, winners will be determined based on points (kills and placements secured). No revival options will be available.",
     ],
     image:
-      "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526462/FREE_FIRE_gi2d8y.png",
+      "https://res.cloudinary.com/dqjrizifp/image/upload/v1741928581/2_erlxgs.png",
     registrationLink: "https://forms.gle/TadoxSZjZDjjimLp7",
   },
   {
