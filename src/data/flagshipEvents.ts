@@ -8,7 +8,7 @@ export const flagshipEvents = [
         date: 'April 5',
         image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526463/IMG-20250307-WA0013_sgd1sw.jpg',
         rules: ['Team size: 4','Participants must use OpenAI GPT models.', 'Judging is based on creativity, efficiency, and accuracy.', 'Submissions must be original and unpublished.'],
-        registrationLink: 'https://unstop.com/p/gptathon-intellina-2k25-coimbatore-institute-of-technology-cit-coimbatore-1416167',
+        registrationLink: 'https://unstop.com/p/gptathon-coimbatore-institute-of-technology-cit-coimbatore-1430549',
         prize: 'Exciting cash prizes and e-certificates for winners!',
         prize:' ₹5,000' ,
         venue: 'LBCH',
