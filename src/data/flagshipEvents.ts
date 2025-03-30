@@ -5,13 +5,14 @@ export const flagshipEvents = [
         description: 'Challenging participants in prompt engineering to generate high-quality AI responses.',
         detailedDescription:
           'GPTathon is an online hackathon hosted on Unstop, designed to challenge participants in the art of prompt engineering. Competitors will refine their ability to craft precise prompts to generate high-quality AI responses.',
-        date: 'April 5',
+        date: 'April 4',
+        time: '10:30 AM  - 01:30 PM',
         image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526463/IMG-20250307-WA0013_sgd1sw.jpg',
         rules: ['Team size: 4','Participants must use OpenAI GPT models.', 'Judging is based on creativity, efficiency, and accuracy.', 'Submissions must be original and unpublished.'],
         registrationLink: 'https://unstop.com/p/gptathon-coimbatore-institute-of-technology-cit-coimbatore-1430549',
         prize: 'Exciting cash prizes and e-certificates for winners!',
         prize:' ₹5,000' ,
-        venue: 'LBCH',
+        venue: 'LBCH, IT-213',
       },
   ];
   
