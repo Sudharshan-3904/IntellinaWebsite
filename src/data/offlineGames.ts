@@ -9,7 +9,7 @@ export const offlineGames = [
     date: 'April 5, 2025',
     image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526463/ipl_auction_wykj1o.png',
     prize: '₹3,000 ',
-    rules: ['Maximum team size: 4', 'No external help allowed', 'Judging based on strategic decision-making'],
+    rules: ['Team size : 3-4','Select 6 players: 2 batsmen, 1 wicketkeeper, 1 all-rounder and 2 bowlers','Player ratings: Overall IPL performance','Max 2 overseas players per team','Team with highest total rating wins','If more than 10 teams, selection will be based on IPL quiz','Judge\'s decision is final'],
   },
   {
     id: 8,
