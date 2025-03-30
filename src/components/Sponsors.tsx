@@ -24,23 +24,23 @@ const sponsors = [
   },
   {
     title: "Co-Sponsored By",
-    logo: "",
+    logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743323585/2498AD43-4644-4EE4-A0FD-D6C74E875639_nsscf5.png",
     description: (
       <>
         Visit{" "}
         <a
-          href=""
+          href="https://www.lingaastechnology.in/about.html"
           target="_blank"
           rel="noopener noreferrer"
           className="text-neon-blue hover:underline"
         >
-          Dsignz Media
+          Lingaas Technology
         </a>
         .
       </>
     ),
     details:
-      "",
+      "Lingaas Technology is a collective initiative of like minded individuals who share more than a decade of field experience in the area of providing electrical and electronic solutions.",
   },
 ];
 
