@@ -13,10 +13,22 @@ const chiefGuests = [
 
 const speakers = [
   {
-    name: "Speaker",
-    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741367704/blank-profile-picture-973460_1280_ogvvkc.webp",
-    description: "About",
-    linkedin: "",
+    name: "Dinesh Chidambaram",
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1625454106573_wiyjun.jpg",
+    description: "Co-Founder - Dsignz Media, Founder - Supportive Souls Charitable Trust, Founder - Pro Secure Labs",
+    linkedin: "https://www.linkedin.com/in/dinesh-chidambaram-06142177/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Selvakumar D",
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1737657555548_l8fazg.jpg",
+    description: "Professional UI/UX Designer and Developer",
+    linkedin: "https://www.linkedin.com/in/dselva/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Veera Sundari Mani",
+    image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1654488582686_bmrpsv.jpg",
+    description: "Delivery Manager at Dsignz Media",
+    linkedin: "https://www.linkedin.com/in/veera-sundari-mani-800928228/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
@@ -27,7 +39,7 @@ const Guests = () => {
 
         {/* Chief Guests Section */}
         <h2 className="text-4xl font-bold text-center text-neon-blue uppercase mb-6">
-          Our Chief Guests
+          Our Chief Guest
         </h2>
         <div className="flex flex-wrap justify-center gap-12">
           {chiefGuests.map((guest, index) => (
@@ -62,7 +74,7 @@ const Guests = () => {
 
         {/* Speakers Section */}
         <h2 className="text-4xl font-bold text-center text-neon-blue uppercase mt-16 mb-6">
-          Our Speakers
+          Our Esteemed Judges
         </h2>
         <div className="flex flex-wrap justify-center gap-12">
           {speakers.map((speaker, index) => (
