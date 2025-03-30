@@ -38,7 +38,7 @@ export const events = [
     detailedDescription:
       'RRR (Run Run Run) is a coding challenge that pushes participants to their limits. This event consists of two intense rounds, testing debugging skills and coding efficiency.',
     date: 'April 4',
-    time: '10:00 AM - 03:00 PM',
+    time: '10:30 AM - 01:00 PM , 02:00 PM - 03:00 PM',
     image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526459/IMG-20250307-WA0018_xthsbg.jpg',
     rules: [
       'Participation: Solo only.',
