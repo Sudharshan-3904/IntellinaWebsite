@@ -74,7 +74,7 @@ const EventsPage = () => {
           {activeTab === 'flagship' && <FlagshipEvents />}
           {activeTab === 'events' && <Events />}
           {activeTab === 'offline' && <OfflineGames />}
-          {activeTab === 'offline' && <OnlineGames />}
+          {activeTab === 'online' && <OnlineGames />}
 
         </div>
       </div>
