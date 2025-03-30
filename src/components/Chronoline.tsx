@@ -13,9 +13,9 @@ const events = [
     events: [
       { name: "Event Inaugration", time: "09:00 AM - 10:00 AM", venue: "IT-213" },
       { name: "Paper Presentation", time: "10:00 AM - 05:00 PM", venue: "M-139, IT-211, IT-212" },
-      { name: "Open Talent", time: "10:00 AM - 05:00 PM", venue: "Auditorium" },
-      { name: "Hackathon", time: "10:00 AM - 10:30 AM", venue: "IT-213" },
-      { name: "Snippet Coding", time: "10:30 AM - 01:00 PM", venue: "M-114" },
+      { name: "Rapid Chess", time: "10:00 AM - 05:00 PM", venue: "Online" },
+      { name: "Hackathon", time: "10:00 AM - 10:30 AM", venue: "IT-213, M-139" },
+      { name: "RRR Coding", time: "10:30 AM - 01:00 PM, 02:00 PM - 03:00 PM", venue: "M-114" },
       { name: "GPTathon", time: "10:30 AM - 01:30 PM", venue: "LBCH, IT-213" },
       { name: "Treasure Hunt", time: "11:00 AM - 01:00 PM", venue: "IT-109" },
       { name: "Bigg Boss", time: "02:00 PM - 05:00 PM", venue: "LBCH" },
@@ -26,7 +26,7 @@ const events = [
   {
     date: "April 5",
     events: [
-      { name: "Hackathon", time: "09:00 AM - 12:30 PM", venue: "M-139" },
+      { name: "Hackathon", time: "09:00 AM - 12:30 PM", venue: "ITT-213, M-139" },
       { name: "Connections", time: "09:00 AM - 12:30 PM", venue: "IT-211, IT-212" },
       { name: "IPL Auction", time: "11:00 AM - 01:00 PM", venue: "IT-212" },
       { name: "Worst UI Design", time: "11:00 AM - 01:00 PM", venue: "M-114" },
