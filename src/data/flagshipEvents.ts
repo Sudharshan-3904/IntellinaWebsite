@@ -13,17 +13,5 @@ export const flagshipEvents = [
         prize:' ₹5,000' ,
         venue: 'LBCH',
       },
-      {
-        id: 12,
-        title: 'Aadalum Paadalum',
-        description: 'Showcase your hidden talents in this open mic-style talent competition.',
-        time: '9:00 AM - 5:00 PM',
-        venue: 'CIT Auditorium',
-        date: 'April 4, 2025',
-        image: 'https://res.cloudinary.com/dqjrizifp/image/upload/v1741711999/Beige_and_Playful_Illustration_with_Retro_Style_Healthy_Food_Festival_Poste_20250311_113213_0000_sc5yrk.png',
-        prize: '₹25,000 Cash Prize + Trophy',
-        registrationLink: 'https://docs.google.com/forms/d/1UJ9CBzEAqdsdFalQly5PvnVWsqOTbZDD8ep36Eob0Uw/viewform?edit_requested=true',
-        rules: ['Open to all talent categories', 'Performance time limit: 5 minutes', 'Judging based on creativity and execution'],
-      },
   ];
   
