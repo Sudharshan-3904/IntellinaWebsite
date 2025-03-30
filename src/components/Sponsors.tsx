@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const sponsors = [
   {
     title: "Our Sponsor",
-    logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741365672/images_ahjrej.jpg",
+    logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324325/WhatsApp_Image_2025-03-18_at_20.37.07_ae89868f_1_xfqlto.png",
     description: (
       <>
         Visit{" "}
