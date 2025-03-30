@@ -3,27 +3,7 @@ import { motion } from "framer-motion";
 
 const sponsors = [
   {
-    title: "Our Title Sponsor",
-    logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741365672/images_1_evvm9l.jpg",
-    description: (
-      <>
-        TITLE SPONSOR{" "}
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-neon-blue hover:underline"
-        >
-          sponsor_site
-        </a>
-        .
-      </>
-    ),
-    details:
-      "",
-  },
-  {
-    title: "Co-Sponsored By",
+    title: "Our Sponsor",
     logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1741365672/images_ahjrej.jpg",
     description: (
       <>
@@ -41,6 +21,26 @@ const sponsors = [
     ),
     details:
       "An innovative web development company providing unique solutions for innovations in Web Development, Web Design, Brand Design and Software Development.",
+  },
+  {
+    title: "Co-Sponsored By",
+    logo: "",
+    description: (
+      <>
+        Visit{" "}
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-neon-blue hover:underline"
+        >
+          Dsignz Media
+        </a>
+        .
+      </>
+    ),
+    details:
+      "",
   },
 ];
 
