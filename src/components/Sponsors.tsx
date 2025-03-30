@@ -24,7 +24,7 @@ const sponsors = [
   },
   {
     title: "Co-Sponsored By",
-    logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743323585/2498AD43-4644-4EE4-A0FD-D6C74E875639_nsscf5.png",
+    logo: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324052/logo_h9ejq5.png",
     description: (
       <>
         Visit{" "}
