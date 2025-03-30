@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Events from '../components/Events';
 import OfflineGames from '../components/OfflineGames';
-import OnlineGames from '../components/OnlineGames';
+//import OnlineGames from '../components/OnlineGames';
 import FlagshipEvents from '../components/FlagshipEvents';
 import Footer from '../components/Footer';
 
@@ -21,7 +21,7 @@ const EventsPage = () => {
     { id: 'flagship', label: 'Flagship Events' },
     { id: 'events', label: 'Technical Events' },
     { id: 'offline', label: 'Non-Technical' },
-    { id: 'online', label: 'Online Games' },
+    //{ id: 'online', label: 'Online Games' },
   ];
 
   return (
@@ -74,7 +74,6 @@ const EventsPage = () => {
           {activeTab === 'flagship' && <FlagshipEvents />}
           {activeTab === 'events' && <Events />}
           {activeTab === 'offline' && <OfflineGames />}
-          {activeTab === 'online' && <OnlineGames />}
         </div>
       </div>
 
