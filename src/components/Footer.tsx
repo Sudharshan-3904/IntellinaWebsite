@@ -58,7 +58,7 @@ const Footer = () => {
   
           {/* Quick Links */}
 <div>
-  <h3 className="text-lg font-future font-semibold mb-4">Quick Links</h3>
+  <h3 className="text-lg font-future font-semibold mb-4">Quick <span className="text-neon-blue">Links</span></h3>
   <ul className="space-y-2">
     {footerLinks[0].links.map((link, index) => (
       <li key={index}>
@@ -77,7 +77,7 @@ const Footer = () => {
           {/* Contact Details */}
           <div>
             <h3 className="text-lg font-future font-semibold mb-4">
-              Contact Us
+              Contact <span className="text-neon-blue">Us</span>
             </h3>
             <ul className="space-y-4">
               {contactInfo.map((item, index) => (
@@ -119,7 +119,7 @@ const Footer = () => {
 {/* Mobile Quick Links */}
 <div className="md:hidden flex flex-col text-center space-y-4 mb-4">
   <div>
-    <h3 className="text-base font-future font-semibold mb-2">Quick Links</h3>
+    <h3 className="text-base font-future font-semibold mb-2">Quick <span className="text-neon-blue">Links</span></h3>
     <ul className="flex justify-center space-x-4">
       {footerLinks[0].links.map((link, index) => (
         <li key={index}>
@@ -139,7 +139,7 @@ const Footer = () => {
   {/* Contact Info */}
   <div>
     <h3 className="text-base font-future font-semibold mb-2">
-      Contact Us
+      Contact <span className="text-neon-blue">Us</span>
     </h3>
     <ul className="space-y-2">
       {contactInfo.map((item, index) => (
