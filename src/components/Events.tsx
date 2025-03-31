@@ -15,8 +15,8 @@ const Events = () => {
     <section id="events" className="py-16">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <h2 className="text-4xl font-bold text-center text-neon-blue uppercase">
-          Technical Events
+        <h2 className="text-4xl font-bold text-center text-white uppercase">
+          Technical <span className="text-neon-blue">Events</span>
         </h2>
 
         {/* Register Button */}
