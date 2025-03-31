@@ -76,8 +76,8 @@ const Team = () => {
 
       {/* Page Title */}
       <div className="text-center pt-24 pb-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-neon-blue uppercase tracking-widest drop-shadow-md">
-          Meet Our Team
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white uppercase tracking-widest drop-shadow-md">
+          Meet <span className="text-neon-blue">Our Team</span>
         </h1>
         <p className="text-gray-300 text-sm md:text-base mt-2 max-w-2xl mx-auto px-4">
           A team of passionate individuals dedicated to making an impact through innovation, creativity, and leadership.
@@ -87,8 +87,8 @@ const Team = () => {
       <div ref={containerRef} className="container mx-auto px-6 py-6">
         {/* Web Developers Section */}
         <div className="text-center mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-neon-blue uppercase drop-shadow-md">
-            Web Developers
+          <h2 className="text-2xl md:text-3xl font-bold text-white uppercase drop-shadow-md">
+            Web <span className="text-neon-blue">Developers</span>
           </h2>
         </div>
 
@@ -145,8 +145,8 @@ const Team = () => {
 
         {/* Board Members Section */}
         <div className="text-center mt-16 mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-neon-blue uppercase drop-shadow-md">
-            Board Members
+          <h2 className="text-2xl md:text-3xl font-bold text-white uppercase drop-shadow-md">
+            Board <span className="text-neon-blue">Members</span>
           </h2>
         </div>
 
