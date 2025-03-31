@@ -191,15 +191,14 @@ const Hero = () => {
         />
         {/* Offer Text Inside Explosion */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-[12px] font-bold text-black leading-tight">
-          <span className="text-sm">₹250</span>  
-          <span className="line-through text-xs">₹300</span>  
+          <span className="text-sm">₹300</span>  
         </div>
       </div>
 
       {/* Offer Details (Outside Explosion, to the Right) */}
       <div className="ml-2 text-white text-sm font-semibold leading-tight">
-        <span className="text-orange-400">🔥 INTELLI-DEAL</span> <br />
-        <span>Till March 31 ⏳</span>
+        <span className="text-orange-400">Registration Ends ⏳</span> <br />
+        <span>April 2</span>
       </div>
     </motion.div>
   </a>
