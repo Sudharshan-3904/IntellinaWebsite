@@ -90,7 +90,7 @@ const Team = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-white uppercase drop-shadow-md">
             Web <span className="text-neon-blue">Developers</span>
           </h2>
-          <p className="text-gray-300 text-xs md:text-base mt-2 max-w-2xl mx-auto px-4">
+          <p className="text-gray-300 text-xs">
           A Dynamic Duo
         </p>
         </div>
