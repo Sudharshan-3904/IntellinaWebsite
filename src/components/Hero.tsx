@@ -198,7 +198,7 @@ const Hero = () => {
       {/* Offer Details (Outside Explosion, to the Right) */}
       <div className="ml-2 text-white text-sm font-semibold leading-tight">
         <span className="text-orange-400">Registration Ends ⏳</span> <br />
-        <span>April 2</span>
+        <span>2<sup>nd</sup> April - 11:59 PM</span>
       </div>
     </motion.div>
   </a>
