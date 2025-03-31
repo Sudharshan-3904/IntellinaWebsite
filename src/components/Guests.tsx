@@ -38,8 +38,8 @@ const Guests = () => {
       <div className="container mx-auto px-6">
 
         {/* Chief Guests Section */}
-        <h2 className="text-4xl font-bold text-center text-neon-blue uppercase mb-6">
-          Our Chief Guest
+        <h2 className="text-4xl font-bold text-center text-white uppercase mb-6">
+          Our <span className="text-neon-blue">Chief Guest</span>
         </h2>
         <div className="flex flex-wrap justify-center gap-12">
           {chiefGuests.map((guest, index) => (
@@ -73,8 +73,8 @@ const Guests = () => {
         </div>
 
         {/* Speakers Section */}
-        <h2 className="text-4xl font-bold text-center text-neon-blue uppercase mt-16 mb-6">
-          Our Esteemed Judges
+        <h2 className="text-4xl font-bold text-center text-white uppercase mt-16 mb-6">
+          Our <span className="text-neon-blue">Esteemed Judges</span>
         </h2>
         <div className="flex flex-wrap justify-center gap-12">
           {speakers.map((speaker, index) => (
