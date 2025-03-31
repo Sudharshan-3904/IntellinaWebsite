@@ -43,7 +43,7 @@ const OfflineGames = () => {
                 <div className="relative w-full h-48 overflow-hidden rounded-md">
                   <img src={game.image} alt={game.title} className="w-full h-full object-cover transition-transform group-hover:scale-110" />
                 </div>
-                <h3 className="text-xl font-semibold mt-4 text-white">{game.title}</h3>
+                <h3 className="text-xl font-semibold mt-4 text-white hover:text-neon-blue transition-colors duration-300">{game.title}</h3>
                 <p className="text-gray-400 text-sm mt-2">{game.description}</p>
               </motion.div>
             ))}
