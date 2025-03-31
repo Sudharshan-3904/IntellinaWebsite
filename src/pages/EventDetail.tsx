@@ -62,7 +62,7 @@ const EventDetail = () => {
         {/* Rules Section */}
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-3 flex items-center">
-            <ClipboardList className="h-6 w-6 text-white mr-2" /> Rules & <span className="text-neon-blue">Guidelines</span>
+            <ClipboardList className="h-6 w-6 text-white mr-2" /> Rules & <span className="text-neon-blue"> Guidelines</span>
           </h2>
           <ul className="list-disc list-inside text-gray-300 space-y-2 pl-2">
             {event.rules.map((rule, index) => (
