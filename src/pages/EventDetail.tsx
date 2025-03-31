@@ -30,8 +30,8 @@ const EventDetail = () => {
       {/* Left Column */}
       <div className="w-full md:w-1/2 flex flex-col">
         {/* Back Button */}
-          <Link to="/events" className="flex items-center text-neon-blue hover:underline mb-6">
-  <ArrowLeft className="h-5 w-5 mr-2" /> Back to Events
+          <Link to="/events" className="flex items-center text-white hover:underline mb-6">
+  <ArrowLeft className="h-5 w-5 mr-2" /> Back <span className="text-neon-blue">to Events</span>
 </Link>
 
         {/* Event Image (Aligned Right in Left Column) */}
@@ -62,8 +62,8 @@ const EventDetail = () => {
         {/* Rules Section */}
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-3 flex items-center">
-            <ClipboardList className="h-6 w-6 text-neon-blue mr-2" /> Rules &
-            Guidelines
+            <ClipboardList className="h-6 w-6 text-white mr-2" /> Rules &
+            <span className="text-neon-blue">Guidelines</span>
           </h2>
           <ul className="list-disc list-inside text-gray-300 space-y-2 pl-2">
             {event.rules.map((rule, index) => (
