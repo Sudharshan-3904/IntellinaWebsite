@@ -77,8 +77,8 @@ const Chronoline = () => {
       <Navbar />
       <div className="container mx-auto px-6 py-16">
         {/* Title */}
-        <h1 className="text-5xl font-bold text-center text-neon-blue uppercase tracking-wide">
-          Chronoline
+        <h1 className="text-5xl font-bold text-center text-white uppercase tracking-wide">
+          Chrono<span className="text-neon-blue">line</span>
         </h1>
 
         {/* Tabs */}
