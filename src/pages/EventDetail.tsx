@@ -31,7 +31,7 @@ const EventDetail = () => {
       <div className="w-full md:w-1/2 flex flex-col">
         {/* Back Button */}
           <Link to="/events" className="flex items-center text-white hover:underline mb-6">
-  <ArrowLeft className="h-5 w-5 mr-2" /> Back <span className="text-neon-blue">to Events</span>
+  <ArrowLeft className="h-5 w-5 mr-2" /> Back <span className="text-neon-blue"> to Events</span>
 </Link>
 
         {/* Event Image (Aligned Right in Left Column) */}
