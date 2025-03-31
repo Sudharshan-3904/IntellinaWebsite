@@ -21,7 +21,7 @@ const FlagshipEvents = () => {
               <div className="relative w-full h-48 overflow-hidden rounded-md">
                 <img src={event.image} alt={event.title} className="w-full h-full object-cover transition-transform group-hover:scale-110" />
               </div>
-              <h3 className="text-xl font-semibold mt-4 text-white">{event.title}</h3>
+              <h3 className="text-xl font-semibold mt-4 text-white hover:text-neon-blue transition-colors duration-300">{event.title}</h3>
               <p className="text-gray-400 text-sm mt-2">{event.description}</p>
             </Link>
           ))}
