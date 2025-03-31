@@ -14,7 +14,7 @@ const OfflineGames = () => {
       <section id="offline-games" ref={ref} className="py-16 bg-dark-primary">
         <div className="container mx-auto px-6">
           <motion.div initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <h2 className="text-4xl font-bold text-center text-neon-blue uppercase">NON-TECHNICAL EVENTS</h2>
+            <h2 className="text-4xl font-bold text-center text-white uppercase">NON-TECHNICAL <span className="text-neon-blue">EVENTS</span></h2>
           </motion.div>
           {/* Register Button */}
         <div className="flex justify-center mt-4">
