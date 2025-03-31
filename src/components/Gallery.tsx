@@ -17,8 +17,8 @@ const Gallery = () => {
   return (
     <section id="gallery" className="py-16 bg-dark-bg text-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-neon-blue uppercase mb-20">
-          Event Gallery
+        <h2 className="text-4xl font-bold text-center text-white uppercase mb-20">
+          Event <span className="text-neon-blue">Gallery</span>
         </h2>
 
         {/* 3D Rotating Gallery for Desktop */}
