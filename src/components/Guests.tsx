@@ -33,7 +33,7 @@ const speakers = [
   {
     name: "Marimuthu Mantharasalam",
     image: "https://res.cloudinary.com/dqjrizifp/image/upload/v1743524744/1628280902038_thj2n9.jpg",
-    description: "Director - Upskill labs",
+    description: "Director - Upskill Labs",
     linkedin: "https://www.linkedin.com/in/marimuthu-mantharasalam-62923057?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
