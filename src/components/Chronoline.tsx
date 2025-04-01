@@ -26,7 +26,7 @@ const events = [
   {
     date: "April 5",
     events: [
-      { name: "Hackathon", time: "09:00 AM - 12:30 PM", venue: "ITT-213, M-139" },
+      { name: "Hackathon", time: "09:00 AM - 12:30 PM", venue: "LBCH, IT-213" },
       { name: "Connections", time: "09:00 AM - 12:30 PM", venue: "IT-211, IT-212" },
       { name: "IPL Auction", time: "11:00 AM - 01:00 PM", venue: "IT-212" },
       { name: "Worst UI Design", time: "11:00 AM - 01:00 PM", venue: "M-114" },
