@@ -21,14 +21,20 @@ const speakers = [
   {
     name: "Selvakumar D",
     image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1737657555548_l8fazg.jpg",
-    description: "Professional UI/UX Designer and Developer",
+    description: "Co-Founder - Dsignz Media, Professional UI/UX Designer and Developer",
     linkedin: "https://www.linkedin.com/in/dselva/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Veera Sundari Mani",
     image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1654488582686_bmrpsv.jpg",
-    description: "Delivery Manager at Dsignz Media",
+    description: "Co-Founder - Pro secure labs, Delivery Manager at Dsignz Media",
     linkedin: "https://www.linkedin.com/in/veera-sundari-mani-800928228/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Marimuthu Mantharasalam",
+    image: "https://res.cloudinary.com/dqjrizifp/image/upload/v1743524172/upskills_xesz3g.jpg",
+    description: "Director - Upskill labs, Wen applications, E-commerce, Mobile App Development",
+    linkedin: "https://www.linkedin.com/in/marimuthu-mantharasalam-62923057?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
