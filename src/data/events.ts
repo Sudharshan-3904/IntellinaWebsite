@@ -9,7 +9,7 @@ export const events = [
     image: 'https://res.cloudinary.com/dxcctqlbr/image/upload/v1741526464/Hackathon_poster_kvm3vz.png',
     rules: ['Maximum team size: 4', 'No pre-built projects allowed', 'Judging based on innovation and execution'],
     prize: '₹5,000 ',
-    venue: 'IT-213, M-139',
+    venue: 'LBCH, IT-213',
   },
   {
     id: 2,
