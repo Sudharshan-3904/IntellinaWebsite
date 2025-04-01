@@ -15,25 +15,25 @@ const speakers = [
   {
     name: "Dinesh Chidambaram",
     image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1625454106573_wiyjun.jpg",
-    description: "Co-Founder - Dsignz Media, Founder - Supportive Souls Charitable Trust, Founder - Pro Secure Labs",
+    description: "Co-Founder - Dsignz Media",
     linkedin: "https://www.linkedin.com/in/dinesh-chidambaram-06142177/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Selvakumar D",
     image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1737657555548_l8fazg.jpg",
-    description: "Co-Founder - Dsignz Media, Professional UI/UX Designer and Developer",
+    description: "Co-Founder - Dsignz Media",
     linkedin: "https://www.linkedin.com/in/dselva/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Veera Sundari Mani",
     image: "https://res.cloudinary.com/dxcctqlbr/image/upload/v1743324990/1654488582686_bmrpsv.jpg",
-    description: "Co-Founder - Pro secure labs, Delivery Manager at Dsignz Media",
+    description: "Co-Founder - Pro Secure Labs",
     linkedin: "https://www.linkedin.com/in/veera-sundari-mani-800928228/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Marimuthu Mantharasalam",
     image: "https://res.cloudinary.com/dqjrizifp/image/upload/v1743524744/1628280902038_thj2n9.jpg",
-    description: "Director - Upskill labs, Wen applications, E-commerce, Mobile App Development",
+    description: "Director - Upskill labs",
     linkedin: "https://www.linkedin.com/in/marimuthu-mantharasalam-62923057?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
