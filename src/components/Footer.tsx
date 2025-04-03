@@ -33,7 +33,7 @@ const Footer = () => {
     {
       icon: <MapPin className="h-5 w-5 text-neon-blue" />,
       title: "Location",
-      details: "College Campus",
+      details: "Coimbatore Institute of Technology",
       link: "https://maps.app.goo.gl/8bPoikSz1V9U9vc68",
     },
   ];
