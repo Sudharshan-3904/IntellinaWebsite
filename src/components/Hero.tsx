@@ -3,10 +3,14 @@ import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { Calendar, MapPin, Clock } from 'lucide-react';
 import { Link } from "react-router-dom";
+import Confetti from "react-confetti";
+import { useWindowSize } from "react-use";
 
 const Hero = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
   const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+  const [eventStarted, setEventStarted] = useState(false);
+  const { width, height } = useWindowSize(); // Get screen dimensions for Confetti
 
   useEffect(() => {
     // GSAP Text Animation
@@ -20,7 +24,7 @@ const Hero = () => {
     }
 
     // Countdown Timer Logic
-    const eventDate = new Date("April 4, 2025 09:00:00").getTime(); // Set event date & time
+    const eventDate = new Date("April 4, 2025 09:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -28,6 +32,7 @@ const Hero = () => {
 
       if (timeRemaining <= 0) {
         setTimeLeft({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+        setEventStarted(true); // Trigger celebration effects
         clearInterval(countdownInterval);
         return;
       }
@@ -43,14 +48,16 @@ const Hero = () => {
     const countdownInterval = setInterval(updateCountdown, 1000);
     updateCountdown(); // Initial call to set values immediately
 
-    return () => clearInterval(countdownInterval); // Cleanup on component unmount
+    return () => clearInterval(countdownInterval);
   }, []);
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+      {/* 🎉 Confetti Effect When Event Starts */}
+      {eventStarted && <Confetti width={width} height={height} numberOfPieces={300} />}
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full grid-bg opacity-30"></div>
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
@@ -69,11 +76,12 @@ const Hero = () => {
             transition={{
               duration: Math.random() * 10 + 10,
               repeat: Infinity,
-              repeatType: 'reverse',
+              repeatType: "reverse",
             }}
           />
         ))}
       </div>
+
 
       <div className="container mx-auto px-4 z-10">
         <div className="flex flex-col items-center text-center">
@@ -149,13 +157,17 @@ const Hero = () => {
             </Link>
           </motion.div>
 
-          {/* Registration Closed Message */}
-          <p className="text-lg font-semibold text-red-500">
-            Registration Closed ❌
-          </p>
-          <p className="text-md text-white mt-2 text-sm">
-            On-spot Registration: ₹350
-          </p>
+          {/* Registration Closed Message (Hides when event starts) */}
+          {!eventStarted && (
+            <>
+              <p className="text-lg font-semibold text-red-500">
+                Registration Closed ❌
+              </p>
+              <p className="text-md text-white mt-2 text-sm">
+                On-spot Registration: ₹350
+              </p>
+            </>
+          )}
 
 
           {/* Countdown Timer */}
@@ -185,7 +197,19 @@ const Hero = () => {
 
             </div>
           </motion.div>
-
+          
+          {/* 🎊 Celebration Message After Countdown Ends */}
+          {eventStarted && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mt-10 text-white"
+            >
+              <h2 className="text-4xl font-bold text-yellow-400 animate-pulse">The Event Has Begun!</h2>
+              <p className="text-lg mt-3">Let the excitement begin!</p>
+            </motion.div>
+          )}
           
           {/* Hackathon Themes Section */}
           <motion.div
