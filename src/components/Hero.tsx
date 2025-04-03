@@ -197,8 +197,8 @@ const Hero = () => {
 
       {/* Offer Details (Outside Explosion, to the Right) */}
       <div className="ml-2 text-white text-sm font-semibold leading-tight">
-        <span className="text-orange-400">Registration Ends ⏳</span> <br />
-        <span>2<sup>nd</sup> April - 11:59 PM</span>
+        <span className="text-orange-400">Registration Ends Today 06:00 PM</span> <br />
+        <span>2<sup>nd</sup>On-spot Registration : ₹350</span>
       </div>
     </motion.div>
   </a>
