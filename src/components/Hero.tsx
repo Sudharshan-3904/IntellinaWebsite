@@ -138,7 +138,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center space-x-2 bg-dark-tertiary/50 px-4 py-2 rounded-lg">
               <MapPin className="h-5 w-5 text-neon-blue" />
-              <span>College Campus, Coimbatore Institute of Technology</span>
+              <span>Coimbatore Institute of Technology</span>
             </div>
             <div className="flex items-center space-x-2 bg-dark-tertiary/50 px-4 py-2 rounded-lg">
               <Clock className="h-5 w-5 text-neon-blue" />
