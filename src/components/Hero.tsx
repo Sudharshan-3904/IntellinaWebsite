@@ -156,6 +156,8 @@ const Hero = () => {
           <p className="text-md text-white mt-2 text-sm">
             On-spot Registration: ₹350
           </p>
+
+
           {/* Countdown Timer */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -182,6 +184,41 @@ const Hero = () => {
             ))}
 
             </div>
+          </motion.div>
+
+          
+          {/* Hackathon Themes Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            className="text-center mt-12"
+          >
+            <h3 className="text-2xl font-bold text-neon-blue mb-6">Hackathon Themes</h3>
+            {new Date().getTime() < new Date("April 4, 2025 10:00:00").getTime() ? (
+              <p className="text-white text-lg font-semibold">Themes will be disclosed by 10:00 AM on April 4, 2025.</p>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-white">
+                {[
+                  "FinTech & Digital Payments",
+                  "Bioinformatics & AI-Driven Healthcare",
+                  "Edge Computing & IoT Innovation",
+                  "AI for Wildlife Conservation & Biodiversity",
+                  "Education & E-Learning",
+                  "Remote Work & Productivity Tools ",
+                  "Judiciary",
+                ].map((theme, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    className="p-4 bg-dark-tertiary/50 rounded-lg shadow-lg"
+                  >
+                    {theme}
+                  </motion.div>
+                ))}
+              </div>
+            )}
           </motion.div>
 
 
