@@ -219,8 +219,8 @@ const Hero = () => {
             className="text-center mt-12"
           >
             <h3 className="text-2xl font-bold text-neon-blue mb-6">Hackathon Themes</h3>
-            {new Date().getTime() < new Date("April 4, 2025 10:30:00").getTime() ? (
-              <p className="text-white text-lg font-semibold">Themes will be disclosed by 10:30 AM on April 4, 2025.</p>
+            {new Date().getTime() < new Date("April 4, 2025 10:15:00").getTime() ? (
+              <p className="text-white text-lg font-semibold">Themes will be disclosed by 10:15 AM on April 4, 2025.</p>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-white">
                 {[
