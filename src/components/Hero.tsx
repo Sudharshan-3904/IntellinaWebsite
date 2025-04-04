@@ -24,7 +24,7 @@ const Hero = () => {
     }
 
     // Countdown Timer Logic
-    const eventDate = new Date("April 4, 2025 09:00:00").getTime();
+    const eventDate = new Date("April 4, 2025 09:30:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
